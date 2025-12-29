@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Tuteja | Aerospace & Mechanical Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
+
+    <header>
+        <div class="container">
+            <h1>MANAN TUTEJA</h1>
+            <p class="subtitle">UCSD Mechanical Engineering M.S.</p>
+            <p class="subtitle">UCSD Aerospace Engineering B.S.</p>
+            <div class="header-links">
+                <a href="https://linkedin.com/in/manan-tuteja-8042b0396/">LinkedIn</a> • 
+                <a href="mailto:manan.tuteja5@gmail.com">manan.tuteja5@gmail.com</a>
+            </div>
+        </div>
+    </header>
+<section class="container about-section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-layout">
+        <div class="about-text">
+            <p>
+                Incoming Mechanical Engineering M.S. student at the University of California San Diego (UCSD) with a background in Aerospace Engineering. 
+                I specialize in mechatronics, robotic system design, and control theory. My experience ranges from 
+                leading mechanical subteams in competitive robotics to developing modular robotic systems for 
+                environmental sensing.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/frc-2022.png" alt="Manan Tuteja" class="profile-img">
+        </div>
+    </div>
+</section>
+
+    <section class="container">
+        <h2 class="section-title">Technical Projects</h2>
+        <div class="project-grid">
+
+            <div class="card" onclick="openProject('triton')">
+                <div class="card-image">
+                    <img src="assets/images/TR-inf.png" alt="Triton Robotics Chassis">
+                    <div class="media-count">View Gallery</div>
+                </div>
+                <div class="card-content">
+                    <h3>Triton Robotics Mechanical Lead</h3>
+                    <p>Mechanical Team Lead for Triton Robotics. Responsible for controls, suspension, chassis design, indexer, and yaw.</p>
+                    <div class="tags"><span>SolidWorks</span> <span>Onshape</span> <span>Simulink/Matlab</span></div>
+                </div>
+            </div>
+
+            <div class="card" onclick="openProject('exagora')">
+                <div class="card-image">
+                    <img src="assets/images/snake-robot1.png" alt="Snake Robot">
+                    <div class="media-count">View Gallery</div>
+                </div>
+                <div class="card-content">
+                    <h3>Modular Snake & Drone</h3>
+                    <p>12-module robotic snake.</p>
+                    <div class="tags"><span>Fusion 360</span> <span>Mechatronics</span> <span>3D Printing</span></div>
+                </div>
+            </div>
+
+            <div class="card" onclick="openProject('frc')">
+                <div class="card-image">
+                    <img src="assets/images/frc-2023.png" alt="FRC Robot">
+                    <div class="media-count">View Gallery</div>
+                </div>
+                <div class="card-content">
+                    <h3>FRC Competition Robots</h3>
+                    <p>Beach Blitz Regional Winner</p>
+                    <div class="tags"><span>Fusion 360</span> <span>Manufacturing</span> <span>Rapid Prototyping</span> <span>Laser Cutting</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+ <section class="container">
+    <h2 class="section-title">Achievements & Experiences</h2>
+    <div class="project-grid">
+        
+        <a href="https://www.lbschools.net/departments/newsroom/details/~board/board-lbusd-news/post/board-lbusd-post-slug-34" target="_blank" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-content">
+                    <h3>StellarXplorers National Finalist</h3>
+                    <p>Competed as a National Finalist Captain in the Air & Space Forces Association StellarXplorers Space Design Challenge, focusing on orbital mechanics and satellite system constraints.</p>
+                    <div class="tags"><span>Orbital Mechanics</span> <span>STK</span></div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://vitallink.org/ev-challenge/" target="_blank" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Energy Invitational Competition</h3>
+                    <p>Mechanical technician in a Competition of Energy Efficient vehicles.</p>
+                    <div class="tags"><span>Car Design</span></div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="additional-list">
+        <ul>
+            <li>
+                <a href="https://github.com/UCSD-ECEMAE-148/fall-final-project-team-9" target="_blank"><strong>Parallel Parking Robot</strong></a> Parallel Parking Robot that localizes off April tags using opencv with a sterecamera and uses ROS2 to control the vehicle using an RPI 5 embedded linux system with a docker container.
+            </li>
+            <li>
+                <strong>UCSD Dean's Honor List</strong>
+            </li>
+            <li>
+                <strong>AP Scholar With Distinction Award</strong>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer><p>&copy; 2025 Manan Tuteja</p></footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
