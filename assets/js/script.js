@@ -3,7 +3,7 @@ triton: {
         title: "Triton Robotics (UCSD)",
         content: `
             <div class="project-detail">
-                <h3>Infantry Robot</h3>
+                <h3>2025 Infantry Robot</h3>
                 <p>Responsible for the linear suspension system design, X-drive omniwheel chassis, and electronics plate, which were optimized based on various factors like the weight, height restriction, rigidity of the springs, and budget.</p>
                 <figure>
                     <img src="assets/images/TR-inf.png">
@@ -11,12 +11,12 @@ triton: {
                 </figure>
             </div>
             <div class="project-detail">
-                <h3>Hero Robot</h3>
+                <h3>2026 Hero Robot</h3>
                 <p>Led deployment of hero robot. Personally Designed:</p>
                 <ul class="design-list">
                     <li>Indexer and ball path for 42mm TPE "golf" balls.</li>
                     <li>Yaw mechanism with a swappable input pulley and an offset encoder pulley with adjustable mounting for tensioning.</li>
-                    <li>Rectangular X-drive mecanum chassis with suspnesion.</li>
+                    <li>Rectangular X-drive mecanum chassis with suspension.</li>
                 </ul>
                 <figure>
                     <img src="assets/images/TR-hero.png">
@@ -34,7 +34,7 @@ triton: {
                         src="https://drive.google.com/file/d/1P6xu8IV_fUMWZMB4u3XCrmqqrO3-OLjP/preview" 
                         width="100%" 
                         height="480" 
-                        allow="autoplay" 
+                        allow="autoplay"
                         style="border-radius: 10px; border: 1px solid var(--border);">
                     </iframe>
                     <p class="cap">Modular Snake Robot movement demonstration.</p>
