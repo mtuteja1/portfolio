@@ -125,12 +125,12 @@ const projectData = {
                 </figure>
                     <div class="full-width" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                         <iframe 
-                            src="https://ucsdcloud-my.sharepoint.com/personal/mtuteja_ucsd_edu/_layouts/15/embed.aspx?UniqueId=7e60c48f-7ef8-4c9e-919f-89e827282e6e&embed=%7B%22af%22%3Atrue%2C%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" 
+                            src="https://drive.google.com/file/d/107r2fem8zABgNdVJ6NH01PjPo7uRpdRL/preview"
                             width="640" 
                             height="360" 
                             frameborder="0" 
                             scrolling="no" 
-                            allowfullscreen 
+                            allow="autoplay" 
                             title="20250625_155304.mp4"
                             style="max-width: 100%; border-radius: 10px;"> </iframe>
                         <p class="cap">Infantry Robot in Action</p>
