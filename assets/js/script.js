@@ -3,7 +3,7 @@ const projectData = {
         title: "Triton Robotics (UCSD)",
         content: `
             <div class="project-detail">
-                <h3>2026 Hero Robot</h3>
+                <h3>2026 Hero Robot (Ongoing)</h3>
                 <p>
                     Mechanical Team Lead for Hero Robot. This robot was designed using Onshape.
                     Personally designed:
@@ -273,6 +273,11 @@ const projectData = {
                     Designed tank drive base and led turret manufacturing
                     for the Beach Blitz Regional Champion robot.
                 </p>
+                <ul class = "design-list">
+                    <li>The tank drive base uses Falcon 500 motors with Planetary gearboxes. These are attached to the in a tank drive formation with chains and sprockets. The chassis is made using 6061 aluminum tubing with a hole pattern and 1/8" aluminum gussets.</li>
+                    <li>The turret uses a Falcon 500 motor with large-ish gear ratio using PCABS 3d printed gears. The pitch control involves a variable hood controlled by another Falcon 500 with spur gears.</li>
+                    <li>The climber is a telescope style. It uses a string and spool on a Falcon 500 motor that is tensioned using a spring. Inside are custom ball bearings that allow the aluminum tubes to be housed inside one another. The arm is on a pivot with custom CNC 1/4" aluminum gears.</li>
+                </ul>
 
                 <figure>
                     <img src="assets/images/frc-2023.png">
@@ -286,7 +291,10 @@ const projectData = {
                     Assisted in manufacturing and assembly for the
                     Everybot style climber and intake systems.
                 </p>
-
+                <ul class = "design-list">
+                    <li>The everybot climber was orginally laser cut wood when testing and was eventually CNCd using 1/4" aluminum.</li>
+                    <li>The intake involves PVC pipes that are spun using Falcon 500 Motors to compress balls into the intake. These are then rotated the opposite direction to deposit the balls. This intake is set on a pivot to allow for a 1 DOF rotation.</li>
+                </ul>
                 <figure>
                     <img src="assets/images/frc-2022.png">
                     <figcaption>Everybot intake and climber modification</figcaption>
