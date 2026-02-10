@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% NEW COMMAND: Use this specifically when another position follows immediately
+\newcommand{\resumeItemListEndTight}{\end{itemize}\vspace{-12pt}}
+
+\newcommand{\resumeMyPosition}[2]{
+    \vspace{-9pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Manan Tuteja} \\ \vspace{1pt}
+    \small 424-392-0891 $|$ \href{mailto:manan.tuteja5@gmail.com}{\underline{manan.tuteja5@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/manan-tuteja-8042b0396/}{\underline{linkedin.com/in/MananTuteja}} $|$
+    \href{https://mtuteja1.github.io/portfolio/}{\underline{Portfolio}}
+\end{center}
+
+% About Me
+\section{Summary}
+    \textnormal
+    {Mechanical and Aerospace Engineering student interested in design and controls. Developed technical and interpersonal skills through active participation in clubs and coursework. Committed to continuous learning and professional growth in engineering.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Drone (Personal Project)}{Dec. 2025 -- Present}{}{}
+      \vspace{-17pt}
+    \resumeItemListStart
+      \resumeItem{Developing custom autonomous drone using Arduino Uno. The drone will be capable of a \textbf{2 kg} lift capacity with a \textbf{10 minute} flight time.}
+      \resumeItem{Designed custom \textbf{2 layer PCB} as a power distribution board (PDB) with \textbf{EasyEDA}. The PDB allows for a 3s LiPo battery to distribute power to all electronics with fuses for safety. Due to the high amperage, the 2 oz copper PCB has two layers that are stiched with vias and use copper areas.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Triton Robotics @ UCSD}{Jan. 2024 -- Present}
+      {Mechanical Team Lead}{Jul. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Robot developed for ARC Robotics Competition with computer vision based turret system.}
+        \resumeItem{Personally managed a team of over 10 mechanical engineers and general management of 30 member mechanical team in \textbf{Onshape} enterprise.}
+        \resumeItem{Oversaw development of shooting mechanism and pitch mechanism made with flywheels, spur gears, and sensors such as encoders and IMUs.}
+        \resumeItem{Personally developed indexer, ball path, customizable yaw mechanism, and a rectangular x-drive mecanum chassis with tangential suspension.}
+      \resumeItemListEnd
+    \vspace{5 pt}
+    \resumeMyPosition{Mechanical Team Member}{Jan. 2024 -- Jun. 2025}
+        \resumeItemListStart
+        \resumeItem{Robot developed for Robomasters North America Competition with computer vision based turret system.}
+        \resumeItem{Designed \textbf{linear suspension system} emphasizing cost-effectiveness and assembly efficiency with \textbf{Solidworks}.}
+        \resumeItem{Designed \textbf{octagonal omniwheel x-drive chassis} with custom polycarbonate electronics plate.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of California San Diego CENG}{Sep. 2025 -- Dec. 2025}
+      {CENG 15R Reader}{}
+      \resumeItemListStart
+        \resumeItem{Reader/Grader for Engineering Computation Using MATLAB for 150+ Chemical and Nano Engineering Students.}
+      \resumeItemListEndTight
+    \vspace{-5 pt} 
+    \resumeSubheading
+      {University of California San Diego MAE}{Sep. 2024 -- Dec. 2024}
+      {MAE 8 Reader}{}
+      \resumeItemListStart
+        \resumeItem{Reader/Grader for MATLAB Programming for Engineering Analysis class for Mechanical and Aerospace Engineering students.}
+      \resumeItemListEnd % <--- Standard spacing preserved here
+      \resumeSubheading
+      {FIRST Robotics Team FRC 687}{Aug. 2020 -- Jun. 2023}
+      {Design Engineer}{}
+      \resumeItemListStart
+      \resumeItem{Designed \textbf{tank drive base} with VEX Falcon 500 motors with chain and sprocket.}
+      \resumeItem{Led turret manufacturing of \textbf{variable hood for pitch} control and 3D printed \textbf{PCABS spur gears}.}  
+      \resumeItem{Design, deployment, and manufacturing of 3D printed differential bevel geared wrist using Fusion 360}
+      \resumeItemListEnd % <--- Standard spacing preserved here
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California San Diego}{La Jolla, CA}
+      {M.S. Mechanical Engineering}{Sep. 2026 -- Jun. 2027}
+    \resumeSubheading
+      {University of California San Diego}{La Jolla, CA}
+      {B.S. Aerospace Engineering}{Sep. 2023 -- Jun. 2026}
+      \resumeItemListStart
+      \resumeItem{Cumulative GPA: 3.822}
+      \resumeItem{Major GPA: 3.728}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%SKILLS
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{CAD}{: Onshape, Autodesk Inventor, Autodesk Fusion 360, Solidworks} \\
+     \textbf{Programming}{: Matlab/Simulink, Python (pandas, NumPy, Matplotlib, OpenCV, and ROS2), C++ (Arduino)} \\
+     \textbf{Manufacturing}{: Lasercutting, Waterjetting, General Machine Shop tools} \\
+     \textbf{PCB Design}{: EasyEDA} \\
+    }}
+ \end{itemize}
+
+\end{document}

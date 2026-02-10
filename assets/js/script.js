@@ -217,6 +217,12 @@ const projectData = {
                         <img src="assets/images/PDBirl.png">
                         <figcaption>Manufactured Power Distribution Board</figcaption>
                 </figure>
+                <figure>
+                    <video controls width="100%" height="480">
+                        <source src="assets/images/InitialPCBTest.mov" type="video/mp4">
+                        </video>
+                        <figcaption>Initial PCB Voltmeter Test</figcaption>
+                </figure>
             </div>
             <figure>
                 <img src="assets/images/Schematic_Drone_2026-02-09.png">
