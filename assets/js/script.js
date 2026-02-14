@@ -281,7 +281,7 @@ const projectData = {
                 </p>
                 <ul class = "design-list">
                     <li>The tank drive base uses Falcon 500 motors with Planetary gearboxes. These are attached to the in a tank drive formation with chains and sprockets. The chassis is made using 6061 aluminum tubing with a hole pattern and 1/8" aluminum gussets.</li>
-                    <li>The turret uses a Falcon 500 motor with large-ish gear ratio using PCABS 3d printed gears. The pitch control involves a variable hood controlled by another Falcon 500 with spur gears.</li>
+                    <li>The turret uses a Falcon 500 motor with large gear ratio using PCABS 3d printed gears. The pitch control involves a variable hood controlled by another Falcon 500 with spur gears.</li>
                     <li>The climber is a telescope style. It uses a string and spool on a Falcon 500 motor that is tensioned using a spring. Inside are custom ball bearings that allow the aluminum tubes to be housed inside one another. The arm is on a pivot with custom CNC 1/4" aluminum gears.</li>
                 </ul>
 
