@@ -194,6 +194,14 @@ const projectData = {
                 <p>
                     Thus far, all the individual components have been tested and a power distribution pcb has been designed. The integration of this code and initial flight test remain for the first iteration of this drone, which will not involve autonomy. This involves the initial Power Distribution board, designed to operate at high amperage using a 2 layer stiched copper area design.
                 </p>
+            <div class = "project-detail">
+                <figure class = "full-width">
+                        <video controls width="100%" height="100%">
+                        <source src="assets/images/DroneTest.mov" type="video/mp4">
+                        </video>
+                        <figcaption>Initial Drone Flight Test</figcaption>
+                </figure>
+            </div>
             <div class="gallery-grid">
                 <figure class="full-width">
                         <video controls width="100%" height="480">
