@@ -125,15 +125,15 @@ const projectData = {
                 </figure>
                     <div class="full-width" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                         <iframe 
-                            src="https://drive.google.com/file/d/107r2fem8zABgNdVJ6NH01PjPo7uRpdRL/preview"
-                            width="640" 
-                            height="360" 
+                            src="https://www.youtube.com/embed/MMNh91HIIWk?rel=0"
+                            width="315" 
+                            height="560" 
                             frameborder="0" 
-                            scrolling="no" 
-                            allow="autoplay" 
-                            title="20250625_155304.mp4"
-                            style="max-width: 100%; border-radius: 10px;"> </iframe>
-                        <p class="cap">Infantry Robot in Action</p>
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            title="Infantry Robot in Action"
+                            style="max-width: 100%; border-radius: 10px; aspect-ratio: 9/16;"> </iframe>
+                        <p class="cap" style="margin-top: 10px;">Infantry Robot in Action</p>
                     </div>
                 <div class="gallery-grid">
                     <figure>
@@ -251,7 +251,7 @@ const projectData = {
             <div class="gallery-grid">
                 <div class="full-width">
                     <iframe
-                        src="https://drive.google.com/file/d/1P6xu8IV_fUMWZMB4u3XCrmqqrO3-OLjP/preview"
+                        src="https://www.youtube.com/embed/rR1GqNzn0RU?rel=0"
                         width="100%"
                         height="480"
                         allow="autoplay"
