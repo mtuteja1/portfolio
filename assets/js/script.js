@@ -1,6 +1,6 @@
 const projectData = {
-    triton: {
-        title: "Triton Robotics (UCSD)",
+    hero: {
+        title: "2026 Hero Robot Triton Robotics (UCSD)",
         content: `
             <div class="project-detail">
                 <h3>2026 Hero Robot (Ongoing)</h3>
@@ -81,7 +81,11 @@ const projectData = {
                     </figure>
                 </div>
             </div>
-
+        `
+    },
+    infantry: {
+        title: "2025 Infantry Robot Triton Robotics (UCSD)",
+        content: `
             <div class="project-detail">
                 <h3>2025 Infantry Robot</h3>
                 <p>
@@ -328,7 +332,83 @@ const projectData = {
                 </figure>
             </div>
         `
-    }
+    },
+    ParallelParkingRobot: {
+        title: "Parallel Parking Robot",
+        content: `
+            <div class="project-detail">
+            <a href="https://github.com/UCSD-ECEMAE-148/fall-final-project-team-9">Git Repo</a>
+                <p>
+                    The car decides, based on occupancy of spots, whether it can park or not. If one of two spots are available, it will park in the free one. The car is also able to determine the distance required to move to the available spot to park, rather than the movement being simply hard-coded. This is done through a vision node and an orchestrator node, where the orchestrator node makes a sevice call to the vision node which outpouts AprilTag depth and parking spot information.
+                </p>
+                <ul class="design-list">
+                    <li>
+                        Distance measurement to the parking spots
+                    </li>
+                    <li>
+                        Automatic parking in parallel spots regardless of starting distance from the spot
+                    </li>
+                    <li>
+                        Decision making regarding which parking spot to choose
+                    </li>
+                    <li>
+                        Identification of parking spots and no-parking sign
+                    </li>
+                </ul>
+                <p>
+                    The car uses a Raspberry Pi 5 as the main computer and uses ROS2 for controlling the physical motor and servo. The camera is a OAK-D lite stereo camera, which is used for AprilTag detection and depth measurement using OpenCV. The car is built on a RC car chassis, with a servo for steering and a motor for throttle control.
+                </p>
+                
+                <h3>Demonstration</h3>
+                <table class="demo-table" style="width: 100%; border-collapse: collapse; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th style="padding: 10px; border-bottom: 1px solid var(--border);">Parking Right Without Sign</th>
+                            <th style="padding: 10px; border-bottom: 1px solid var(--border);">Parking Right With Sign</th>
+                            <th style="padding: 10px; border-bottom: 1px solid var(--border);">Parking Left With Sign</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px;">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/wWIEcDWLWB0"
+                                    width="100%" 
+                                    height="315" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    style="border-radius: 10px; aspect-ratio: 9/16;">
+                                </iframe>
+                            </td>
+                            <td style="padding: 10px;">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/f47eT-xQKbs"
+                                    width="100%" 
+                                    height="315" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    style="border-radius: 10px; aspect-ratio: 9/16;">
+                                </iframe>
+                            </td>
+                            <td style="padding: 10px;">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/o59ntO1OXrE"
+                                    width="100%" 
+                                    height="315" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    style="border-radius: 10px; aspect-ratio: 9/16;">
+                                </iframe>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            `
+    },
 };
 
 function openProject(id) {
