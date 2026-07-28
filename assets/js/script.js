@@ -3,13 +3,22 @@ const projectData = {
         title: "2026 Hero Robot Triton Robotics (UCSD)",
         content: `
             <div class="project-detail">
-                <h3>2026 Hero Robot (Ongoing)</h3>
+                <h3>2026 Hero Robot</h3>
                 <p>
                     Mechanical Team Lead for Hero Robot. This robot was designed using Onshape.
                     Personally designed:
                 </p>
 
                 <ul class="design-list">
+                    <li>
+                        Custom Breakout Board for STM32 Nucleo microcontroller with I2C, UART, GPIO, analog, PWM, CAN, and power connections made in EasyEDA.
+                        <ul>
+                            <li>STM32 Nucleo microcontroller used for main control of the robot.</li>
+                            <li>XT30 for power connection </li>
+                            <li> JST XH for communication and signal lines</li>
+                            <li> General headers for GPIO, analog, and PWM connections to allow for rapid testing.</li>
+                        </ul>
+                    </li>
                     <li>
                         Indexer and ball path for 42mm TPE golf balls
                         <ul>
@@ -56,12 +65,41 @@ const projectData = {
                         </ul>
                     </li>
                 </ul>
+                <figure class="full-width">
+                    <img src="assets/images/Hero_IRL.jpg">
+                    <figcaption>Final Robot</figcaption>
+                </figure>
 
                 <figure class="full-width">
                     <img src="assets/images/TR-hero.png">
-                    <figcaption>Current Robot Assembly</figcaption>
+                    <figcaption>Robot Assembly in Onshape</figcaption>
                 </figure>
 
+                <figure>
+                    <img src="assets/images/TRElectrical/Schematic_TR-Breakout-Board_V12_2026-07-28.png">
+                    <figcaption>STM32 Nucleo Schematic</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/TRElectrical/NucleoPCB.png">
+                    <figcaption>STM32 Nucleo PCB</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/TRElectrical/NucleoPCBIRL.jpg">
+                    <figcaption>STM32 Nucleo PCB Manufactured</figcaption>
+                </figure>
+
+                <div class="full-width" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                        <iframe 
+                            src="https://www.youtube.com/embed/zyQaK4kknOA?si=YWXznVnt8FDj4-3Q"
+                            height="315" 
+                            width="560" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            title="Competition Recap"
+                            style="max-width: 100%; border-radius: 10px; aspect-ratio: 9/16;"> </iframe>
+                        <p class="cap" style="margin-top: 10px;">Competition Recap</p>
+                 </div>
                 <div class="gallery-grid">
                     <figure class="full-width">
                         <video controls width="100%" height="480">
@@ -157,7 +195,7 @@ const projectData = {
         title: "Personal Project: Custom Autonomous Drone (Ongoing)",
         content: `
             <div class="project-detail">
-            <a href="https://github.com/arugoa/drone">Git Repo</a>
+            <a class="project-link" href="https://github.com/arugoa/drone">Git Repo</a>
                 <p>
                     This is a custom drone that I am currently working on building with some of my friends. The goal for the drone is to eventually autonomously navigate using a lidar and computer vision. The stats of the drone are as follows:
                 </p>
@@ -205,6 +243,29 @@ const projectData = {
                         </video>
                         <figcaption>Initial Drone Flight Test</figcaption>
                 </figure>
+            </div>
+            <div class="project-detail">
+                <p>
+                    Current designed PCBs:
+                </p>
+                <div class="gallery-grid">
+                <figure>
+                    <img src="assets/images/PCB_PCB_Teensy_4-1_BreakoutBoard_2026-07-27.png">
+                    <figcaption>Teensy 4.1 Breakout Board</figcaption>
+                </figure>
+                 <figure>
+                    <img src="assets/images/Schematic_Teensy_4-1_BreakoutBoard_2026-07-27.png">
+                    <figcaption>Teensy 4.1 Breakout Board Schematic</figcaption>
+                </figure>
+                    <figure>
+                    <img src="assets/images/PCB_PCB_Orange_PI_Breakout_Board_2026-07-27.png">
+                    <figcaption>Orange Pi Breakout Board</figcaption>
+                </figure>
+                 <figure>
+                    <img src="assets/images/Schematic_Orange_PI_Breakout_Board_2026-07-27.png">
+                    <figcaption>Orange Pi Breakout Board Schematic</figcaption>
+                </figure>
+                </div>
             </div>
             <div class="gallery-grid">
                 <figure class="full-width">
@@ -337,7 +398,7 @@ const projectData = {
         title: "Parallel Parking Robot",
         content: `
             <div class="project-detail">
-            <a href="https://github.com/UCSD-ECEMAE-148/fall-final-project-team-9">Git Repo</a>
+            <a class="project-link" href="https://github.com/UCSD-ECEMAE-148/fall-final-project-team-9">Git Repo</a>
                 <p>
                     The car decides, based on occupancy of spots, whether it can park or not. If one of two spots are available, it will park in the free one. The car is also able to determine the distance required to move to the available spot to park, rather than the movement being simply hard-coded. This is done through a vision node and an orchestrator node, where the orchestrator node makes a sevice call to the vision node which outpouts AprilTag depth and parking spot information.
                 </p>
@@ -409,6 +470,31 @@ const projectData = {
             </div>
             `
     },
+    Plane: {
+        title: "Plane Project",
+        content: `
+            <div class="project-detail">
+            <p>
+                    This is a custom RC airplane that I designed and built. For this project, I was primarily responsible for the CAD, which was done through Onshape, a link to which can be found here: <a class="project-link" href="https://cad.onshape.com/documents/8d7a194dfe5029fbce6673fb/w/743d9750d0b0d0938b222467/e/45413dfaad445ade4001fb03?renderMode=0&uiState=6a6852015a7913dfaedc4022">Onshape CAD</a>. The plane is powered by a brushless motor and uses a 3S LiPo battery for power. The plane is designed to be lightweight and aerodynamic, with a focus on stability and maneuverability.
+                </p>
+            <figure class="full-width">
+                <img src="assets/images/plane/planeposter.png">
+            </figure>
+            <figure>
+                <img src="assets/images/plane/AirplaneCAD.png">
+                <figcaption>CAD Design</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/plane/AssembledPlane.jpg">
+                <figcaption>Assembled Plane</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/plane/innerplane.jpg">
+                <figcaption>Assembly and Manufacturing Process</figcaption>
+            </figure>
+            </div>
+            `
+    }
 };
 
 function openProject(id) {

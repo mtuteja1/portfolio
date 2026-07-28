@@ -23,21 +23,28 @@ body {
 
 /* --- Header & Navigation --- */
 header { 
-    padding: 80px 0 40px; 
+    padding: 44px 0 14px; 
     text-align: center; 
 }
 
 h1 { 
-    font-size: 3rem; 
+    font-size: 2.45rem; 
     margin: 0; 
     color: #fff; 
     letter-spacing: -1px;
 }
 
+.h3 {
+    margin: 8px 0 0;
+    font-size: 1.08rem;
+    color: var(--text);
+    line-height: 1.45;
+}
+
 .subtitle { 
     color: var(--accent); 
-    font-size: 1.2rem; 
-    margin: 10px 0; 
+    font-size: 1.15rem; 
+    margin: 8px 0; 
     font-weight: 600;
 }
 
@@ -45,7 +52,7 @@ h1 {
     color: #8b949e; 
     text-decoration: none; 
     margin: 0 10px; 
-    font-size: 0.9rem; 
+    font-size: 1rem; 
     transition: color 0.2s;
 }
 
@@ -83,14 +90,14 @@ h1 {
 }
 
 .about-image {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: flex-end; /* Keeps image pinned to the right */
 }
 
 .profile-img {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     border-radius: 12px;
     /* Clean, no borders or hover effects */
@@ -117,6 +124,7 @@ h1 {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 25px; 
+    align-items: start;
 }
 
 .card { 
@@ -173,6 +181,54 @@ h1 {
     color: var(--accent);
 }
 
+.achievement-block {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--card-bg);
+}
+
+.achievement-item {
+    display: block;
+    padding: 22px 26px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.achievement-item + .achievement-item {
+    border-top: 1px solid var(--border);
+}
+
+.achievement-item:hover {
+    background: #1b2129;
+}
+
+.achievement-item h3 {
+    margin: 0 0 8px 0;
+    color: #fff;
+}
+
+.achievement-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #8b949e;
+}
+
+.achievement-item .tags {
+    margin-top: 14px;
+}
+
+.achievement-item.text-item {
+    color: #c9d1d9;
+    font-size: 0.98rem;
+}
+
+@media (max-width: 850px) {
+    .achievement-item {
+        padding: 18px 20px;
+    }
+}
+
 /* --- Modal Styling --- */
 .modal { 
     display: none; 
@@ -192,6 +248,11 @@ h1 {
     max-width: 850px; 
     border-radius: 16px; 
     border: 1px solid var(--border);
+}
+
+.close {
+    cursor: pointer;
+    user-select: none;
 }
 
 .project-detail {
@@ -217,6 +278,19 @@ h1 {
     background: #000;    
     border-radius: 10px;
     border: 1px solid var(--border);
+}
+
+.modal-content a.project-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.modal-content a.project-link:hover {
+    color: #8cc0ff;
 }
 
 /* --- Lists & Experiences --- */

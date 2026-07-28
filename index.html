@@ -16,7 +16,7 @@
             <h1>Manan Tuteja</h1>
             <p class="subtitle">M.S. Mechanical Engineering @ UCSD</p>
             <p class="subtitle">B.S. Aerospace Engineering @ UCSD</p>
-            <p class ="h3">Cumulative GPA: 3.818<br>Major GPA: 3.750</p>
+            <p class ="h3">Cumulative GPA: 3.818    |   Major GPA: 3.750</p>
             <div class="header-links">
                 <a href="https://linkedin.com/in/manan-tuteja-8042b0396/">LinkedIn</a> • 
                 <a href="mailto:manan.tuteja5@gmail.com">manan.tuteja5@gmail.com</a>
@@ -43,6 +43,29 @@
     <section class="container">
         <h2 class="section-title">Technical Projects</h2>
         <div class="project-grid">
+            <div class="card" onclick="openProject('hero')">
+                <div class="card-image">
+                    <img src="assets/images/Hero_IRL.jpg" alt="Triton Robotics Chassis">
+                    <div class="media-count">View Gallery</div>
+                </div>
+                <div class="card-content">
+                    <h3>Triton Robotics Mechanical Lead</h3>
+                    <p>Mechanical Team Lead for Triton Robotics. Responsible for controls, suspension, chassis design, indexer, yaw, and electronics.</p>
+                    <div class="tags"> <span>Onshape</span> <span>PCB Design</span> <span>Leadership</span> <span>Manufacturing</span></div>
+                </div>
+            </div>
+            <div class="card" onclick="openProject('Plane')">
+                <div class="card-image">
+                    <img src="assets/images/plane/thumbnail.jpg" alt="Triton Robotics Chassis">
+                    <div class="media-count">View Gallery</div>
+                </div>
+                <div class="card-content">
+                    <h3>CAD Designer for RC Airplane</h3>
+                    <p>Mechanical CAD Designer for RC Airplane made with foam, balsa and birch wood, monokote, and epoxy.</p>
+                    <div class="tags"> <span>Onshape</span> <span>Simulink/Matlab</span> </div>
+                </div>
+            </div>
+
             <div class="card" onclick="openProject('drone')">
                 <div class="card-image">
                     <img src="assets/images/drone.png" alt="Triton Robotics Chassis">
@@ -55,17 +78,6 @@
                 </div>
             </div>
 
-            <div class="card" onclick="openProject('hero')">
-                <div class="card-image">
-                    <img src="assets/images/TR-hero.png" alt="Triton Robotics Chassis">
-                    <div class="media-count">View Gallery</div>
-                </div>
-                <div class="card-content">
-                    <h3>Triton Robotics Mechanical Lead</h3>
-                    <p>Mechanical Team Lead for Triton Robotics. Responsible for controls, suspension, chassis design, indexer, yaw, and electronics protection.</p>
-                    <div class="tags"> <span>Onshape</span> <span>Simulink/Matlab</span></div>
-                </div>
-            </div>
             <div class="card" onclick="openProject('ParallelParkingRobot')">
                 <div class="card-image">
                     <img src="assets/images/parallelparkingrobothumbnail.jpg" alt="Triton Robotics Chassis">
@@ -77,6 +89,7 @@
                     <div class="tags"> <span>Fusion 360</span> <span>OpenCV</span> <span>ROS2</span></div>
                 </div>
             </div>
+
             <div class="card" onclick="openProject('infantry')">
                 <div class="card-image">
                     <img src="assets/images/TR-inf.png" alt="Triton Robotics Chassis">
@@ -117,41 +130,30 @@
 
  <section class="container">
     <h2 class="section-title">Achievements & Experiences</h2>
-    <div class="project-grid">
-        
-        <a href="https://www.lbschools.net/departments/newsroom/details/~board/board-lbusd-news/post/board-lbusd-post-slug-34" target="_blank" style="text-decoration: none;">
-            <div class="card">
-                <div class="card-content">
-                    <h3>StellarXplorers National Finalist</h3>
-                    <p>Competed as a National Finalist Captain in the Air & Space Forces Association StellarXplorers Space Design Challenge, focusing on orbital mechanics and satellite system constraints.</p>
-                    <div class="tags"><span>Orbital Mechanics</span> <span>STK</span></div>
-                </div>
-            </div>
+    <div class="achievement-block">
+        <a class="achievement-item" href="https://www.lbschools.net/departments/newsroom/details/~board/board-lbusd-news/post/board-lbusd-post-slug-34" target="_blank">
+            <h3>StellarXplorers National Finalist</h3>
+            <p>Competed as a National Finalist Captain in the Air & Space Forces Association StellarXplorers Space Design Challenge, focusing on orbital mechanics and satellite system constraints.</p>
+            <div class="tags"><span>Orbital Mechanics</span> <span>STK</span></div>
         </a>
 
-        <a href="https://vitallink.org/ev-challenge/" target="_blank" style="text-decoration: none;">
-            <div class="card">
-                <div class="card-content">
-                    <h3>Energy Invitational Competition</h3>
-                    <p>Mechanical technician in a Competition of Energy Efficient vehicles.</p>
-                    <div class="tags"><span>Car Design</span></div>
-                </div>
-            </div>
+        <a class="achievement-item" href="https://vitallink.org/ev-challenge/" target="_blank">
+            <h3>Energy Invitational Competition</h3>
+            <p>Mechanical technician in a Competition of Energy Efficient vehicles.</p>
+            <div class="tags"><span>Car Design</span></div>
         </a>
-    </div>
 
-    <div class="additional-list">
-        <ul>
-            <li>
-                <strong>UCSD Dean's Honor List</strong>
-            </li>
-            <li>
-                <strong>AP Scholar With Distinction Award</strong>
-            </li>
-            <li>
-                <strong>National Merit Scholarship Finalist</strong>
-            </li>
-        </ul>
+        <div class="achievement-item text-item">
+            <strong>UCSD Dean's Honor List</strong>
+        </div>
+
+        <div class="achievement-item text-item">
+            <strong>AP Scholar With Distinction Award</strong>
+        </div>
+
+        <div class="achievement-item text-item">
+            <strong>National Merit Scholarship Finalist</strong>
+        </div>
     </div>
 </section>
 
