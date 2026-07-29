@@ -12,10 +12,10 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, urlcolor=MidnightBlue, linkcolor=MidnightBlue, citecolor=MidnightBlue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -85,6 +85,8 @@
     \end{tabular*}\vspace{-6pt}
 }
 
+\newcommand{\resumeLink}[2]{\href{#1}{\textcolor{black}{\underline{#2}}}}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,9 +95,9 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Manan Tuteja} \\ \vspace{1pt}
-    \small 424-392-0891 $|$ \href{mailto:manan.tuteja5@gmail.com}{\underline{manan.tuteja5@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/manan-tuteja-8042b0396/}{\underline{linkedin.com/in/MananTuteja}} $|$
-    \href{https://mtuteja1.github.io/portfolio/}{\underline{Portfolio}}
+  \small 424-392-0891 $|$ \resumeLink{mailto:manan.tuteja5@gmail.com}{manan.tuteja5@gmail.com} $|$ 
+  \resumeLink{https://www.linkedin.com/in/manan-tuteja-8042b0396/}{linkedin.com/in/MananTuteja} $|$
+  \resumeLink{https://mtuteja1.github.io/portfolio/}{Portfolio}
 \end{center}
 
 % About Me
@@ -123,10 +125,10 @@
         \resumeItem{Developed pneumatic and electrical circuitry integrating vacuum systems, solenoid valves, regulators, gauges, peristaltic pumps with power supplies, circuit breakers, switches, and relays through Visio.}
       \resumeItemListEnd
     \resumeSubheading
-      {Triton Robotics @ University of California San Diego}{Jan. 2024 -- Present}
-      {Mechanical Team Lead}{Jul. 2025 -- Present}
+      {\resumeLink{https://tritonrobotics.org/}{Triton Robotics} @ University of California San Diego}{Jan. 2024 -- Present}
+      {President / Vice President Mechanical Team}{Jul. 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Robot developed for ARC Robotics Competition with computer vision based turret system.}
+        \resumeItem{Autonomous Robot developed for \resumeLink{https://www.robomasterna.com/}{ARC Robotics Competition} with computer vision based turret system.}
         \resumeItem{Managed a team of over 10 mechanical engineers and general management of 30 member mechanical team in \textbf{Onshape} enterprise.}
         \resumeItem{Directed development of shooting mechanism and pitch mechanism made with flywheels, spur gears, and sensors such as encoders and IMUs.}
         \resumeItem{Designed and manufactured indexer, ball path, customizable yaw mechanism, and a rectangular x-drive mecanum chassis with tangential suspension.}
@@ -135,7 +137,6 @@
     \vspace{5 pt}
     \resumeMyPosition{Mechanical Team Member}{Jan. 2024 -- Jun. 2025}
         \resumeItemListStart
-        \resumeItem{Robot developed for Robomasters North America Competition with computer vision based turret system.}
         \resumeItem{Designed \textbf{linear suspension system} emphasizing cost-effectiveness and assembly efficiency with \textbf{Solidworks}.}
         \resumeItem{Designed \textbf{octagonal omniwheel x-drive chassis} with custom polycarbonate electronics plate.}
       \resumeItemListEnd
